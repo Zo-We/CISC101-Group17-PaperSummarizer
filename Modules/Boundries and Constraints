@@ -1,0 +1,29 @@
+Workflow Overview
+Step	Action	Output
+1	Intake & Setup	Normalized section list, constraints check
+2	Section Loop	Section summaries (≤150 words each)
+3	Guardrails	Flags for missing/short/hallucinated content
+4	Rendering	Unified summary (expert + lay variants)
+5	Citation Checker	Consolidated reference list, warnings
+6	Contributions & Equations	Key findings + equation explanations
+7	Final Output	Structured report with all required sections
+
+Constraints
+Max 150 words per section summary.
+
+Max 300 words unified summary.
+
+Maintain consistent terminology and citation style.
+
+Reading level: upper undergraduate.
+
+Preserve original section order.
+
+Boundaries
+Do not invent sections that are missing.
+
+Do not fabricate citations or references.
+
+Do **not exceed word limits per section or unified summary.
+
+Do not alter section order; preserve original sequence.
