@@ -1,0 +1,74 @@
+Internal Reference Framework (Multi-Module Architecture)
+Module 1: Intake & Setup
+Normalize section names (e.g., “Intro” → “Introduction”).
+
+Detect missing or empty sections.
+
+Identify sections shorter than 50 words.
+
+Store user parameters (audience, emphasis, length).
+
+Module 2: Section Loop
+For each section:
+
+Summarize in ≤150 words.
+
+Preserve terminology and citation style.
+
+Flag if section violates constraints (too short, missing citations).
+
+Store structured output in a table.
+
+Module 3: Guardrails
+Missing/Empty Sections → Flag in “Checks & Warnings.”
+
+<50-word Sections → Flag as insufficient.
+
+Hallucination Mitigation → Summaries must only use provided text.
+
+Long-Paper Chunking → Break down sections into smaller chunks if >1500 words (PS2 context-window strategy).
+
+Module 4: Rendering & Refinement
+Assemble unified summary (≤300 words).
+
+Generate Expert Summary (technical emphasis).
+
+Generate Lay Summary (conceptual emphasis, simplified language).
+
+Ensure consistent formatting across outputs.
+
+Module 5: Citation Extractor & Integrity Checker
+Scan each section for in-text citations (APA, MLA, numeric).
+
+Build consolidated reference list.
+
+Flag missing or malformed citations.
+
+Prevent hallucinated references by cross-checking against provided text.
+
+Module 6: Key Contributions & Equation Explainer
+Extract 2–4 core contributions (novel methods, findings, implications).
+
+Identify mathematical expressions or formulas.
+
+Provide short, plain-language explanations of each equation.
+
+Workflow Overview
+Step	Action	Output
+1	Intake & Setup	Normalized section list, constraints check
+2	Section Loop	Section summaries (≤150 words each)
+3	Guardrails	Flags for missing/short/hallucinated content
+4	Rendering	Unified summary (expert + lay variants)
+5	Citation Checker	Consolidated reference list, warnings
+6	Contributions & Equations	Key findings + equation explanations
+7	Final Output	Structured report with all required sections
+Constraints
+Max 150 words per section summary.
+
+Max 300 words unified summary.
+
+Maintain consistent terminology and citation style.
+
+Reading level: upper undergraduate.
+
+Preserve original section order.
