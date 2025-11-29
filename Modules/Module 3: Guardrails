@@ -1,3 +1,5 @@
+Changelog Entry - Added Strict Mode, added section edge warning messages.
+
 Module 3: Guardrails
 Missing/Empty Sections → Flag in “Checks & Warnings.”
 
@@ -6,3 +8,12 @@ Missing/Empty Sections → Flag in “Checks & Warnings.”
 Hallucination Mitigation → Summaries must only use provided text.
 
 Long-Paper Chunking → Break down sections into smaller chunks if >1500 words (PS2 context-window strategy).
+
+evidence_mode = "strict"
+if "strict" = True
+  then only use claims, equations, and results from the provided text.
+    if insufficient info
+      then output a clear message: "The source text does not provide enough detail to summarize this section in strict evidence mode."
+
+If section is missing Missing/empty, then output "Section skipped: no usable text was provided."
+If section is <50 words, then output "Section very short: summary may be incomplete."
