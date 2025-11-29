@@ -1,0 +1,8 @@
+Module 1: Intake & Setup
+Normalize section names (e.g., “Intro” → “Introduction”).
+
+Detect missing or empty sections.
+
+Identify sections shorter than 50 words.
+
+Store user parameters (audience, emphasis, length).
