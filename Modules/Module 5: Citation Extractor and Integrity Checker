@@ -1,0 +1,8 @@
+Module 5: Citation Extractor & Integrity Checker
+Scan each section for in-text citations (APA, MLA, numeric).
+
+Build consolidated reference list.
+
+Flag missing or malformed citations.
+
+Prevent hallucinated references by cross-checking against provided text.
