@@ -8,3 +8,10 @@ Preserve terminology and citation style.
 Flag if section violates constraints (too short, missing citations).
 
 Store structured output in a table.
+
+
+Summary_Level = "short","detailed"
+If "short" = true
+  then generate only a compact summary.
+If "detailed" = true
+  then generate summary + bullet list
